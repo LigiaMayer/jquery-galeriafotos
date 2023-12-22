@@ -1,27 +1,31 @@
 $(document).ready(function(){
-        $('header button').ready.click(function(){
-            $('form').slidedown();
-        })
-        $(#botao-cancelar).click(function(){
-            $('form').slideUp();
-        })
+    $('header button').click(function(){
+        $('form').slideDown();
+    });
 
-        $('form').on('submit',function(e){
-            e.preventDefault();
-            const enderecoDaNovaImagem -$('#endereco-imagem-nova').val();
-            const novoItem = $('<li style="display: none"></li>');
-            $(`<img src="${enderecoDaNovaImagem}" />`).appendTo(novoItem);
-            $(`
+
+    $('#botao-cancelar').click(function(){
+        $('form').slideUp();
+    });
+
+
+    $('form').on('submit', function(e){
+        e.preventDefault();
+        const enderecoDaNovaImagem = $('#endereco-imagem-nova').val();
+        const novoItem = $('<li style="display: none"></li>');
+        
+        $(`<img src="${enderecoDaNovaImagem}" />`).appendTo(novoItem);
+        
+        $(`
             <div class="overlay-imagem-link">
                 <a href="${enderecoDaNovaImagem}" target="blank" title="Ver imagem em tamanho real">
                     Ver imagem em tamanho real
                 </a>
             </div>
-        `).appendTo(novoItem)
+        `).appendTo(novoItem);
+        
         $(novoItem).appendTo('ul');
         $(novoItem).fadeIn(5000);
         $('#endereco-imagem-nova').val(''); 
-        })
-
-
-})
+    });
+});
