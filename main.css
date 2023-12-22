@@ -1,17 +1,17 @@
-*{
-    margin:0 ;
-    padding: 0 ;
-    box-sizing:border-box;
-    font-family:Roboto , sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
 }
 
 header {
-    background-color: rgb(188, 108, 188);
-    padding:16px 0 ;
-    color: white;
-    display: flex;
-    border-bottom: 16px solid rgb(62, 3, 62);
-    justify-content: center;
+    background-color: #d70973;
+    padding: 16px 0;
+    color: #fff;
+    display: flex; 
+    border-bottom: 16px solid #eb41cf;
+    justify-content: center; 
     text-transform: uppercase;
     font-style: italic;
 }
@@ -20,65 +20,65 @@ header button {
     margin-left: 16px;
 }
 
-form{
-    background-color: rgb(193, 189, 189);
-    padding: 14px 0; 
+form {
+    background-color: #c8d6e5;
+    padding: 24px 0; 
     text-align: center;
-    display:none;
-
+    display: none; 
 }
 form h2 {
     margin-bottom: 16px;
 }
 
-input,button {
+input, button {
     padding: 8px;
 }
+
 button {
-    background-color: rgb(106, 220, 188);
-    border:none;
-    cursor:pointer;
+    background-color:#e899e1;
+    border: none;
+    cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
-    color: white;
+    color: #fff;
 }
 
-#botao-cancelar{
+#botao-cancelar {
     background-color: red;
 }
 
 ul {
-    display:flex ;
-    flex-wrap:wrap;
-}
+    display: flex;
+    flex-wrap: wrap; }
 
 ul li {
     max-width: 25%;
-    list-style:none ;
-    position:relative;
-    max: height 280px;
-    overflow-y: hidden;
+    max-height: 280px;
+    list-style: none; 
+    position: relative;
+    overflow-y: hidden; 
 }
 
 ul li img {
-    widt: 100%;
-    height:100%;
-}
-.overlay-image-link{
-    padding: 16px;
-    background-color: rgba(0,0,0,0.7);
-    position:absolute;
-    bottom:0;
-    left:0;
     width: 100%;
-    opacity: 0;
-    transition:all ease .5s;
-
+    height: 100%;
 }
-.overlay-image-link a {
-    color: azure;
+
+.overlay-imagem-link {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    position: absolute; 
+    left: 0; 
+    width: 100%; 
+    opacity: 0; 
+    transition: all ease .5s; 
+}
+
+.overlay-imagem-link a {
+    color: #fff;
     text-decoration: none;
 }
-ul li :hover .overlay-image-link {
-    opacity:1;
-}
+
+ul li:hover .overlay-imagem-link { 
+    opacity: 1;
+}}
